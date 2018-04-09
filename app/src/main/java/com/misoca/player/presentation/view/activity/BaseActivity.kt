@@ -1,6 +1,7 @@
 package com.misoca.player.presentation.view.activity
 
 import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import android.support.annotation.IdRes
 import android.support.annotation.LayoutRes
@@ -9,8 +10,9 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.app.AppCompatDelegate
 import android.support.v7.widget.Toolbar
 import android.view.MenuItem
+import dagger.android.support.DaggerAppCompatActivity
 
-abstract class BaseActivity : AppCompatActivity() {
+open class BaseActivity : DaggerAppCompatActivity() {
 
     override fun onBackPressed(){
         if (supportFragmentManager.backStackEntryCount > 1) {

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.misoca.player.databinding.FragmentArtistsBinding
 
-class ArtistsFragment : Fragment() {
+class ArtistsFragment : BaseFragment() {
 
     lateinit var binding: FragmentArtistsBinding
 

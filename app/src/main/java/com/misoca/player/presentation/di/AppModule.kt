@@ -6,7 +6,10 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
-@Module internal object AppModule {
+@Module(subcomponents = [
+    MainActivitySubComponent::class
+])
+internal object AppModule {
     @Singleton @Provides @JvmStatic
     fun provideContext(application: Application): Context = application
 }

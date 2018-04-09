@@ -12,7 +12,7 @@ import com.misoca.player.databinding.FragmentLibraryBinding
 import com.misoca.player.databinding.FragmentMiniPlayerBinding
 import net.steamcrafted.materialiconlib.MaterialDrawableBuilder
 
-class MiniPlayerFragment : Fragment() {
+class MiniPlayerFragment : BaseFragment() {
 
     lateinit var binding: FragmentMiniPlayerBinding
 

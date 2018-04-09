@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.misoca.player.databinding.FragmentAlbumsBinding
+import dagger.android.support.DaggerFragment
 
-class AlbumsFragment : Fragment() {
+class AlbumsFragment : BaseFragment() {
 
     lateinit var binding: FragmentAlbumsBinding
 

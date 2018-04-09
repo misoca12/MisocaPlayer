@@ -11,9 +11,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.misoca.player.R
 import com.misoca.player.databinding.FragmentLibraryBinding
+import dagger.android.support.DaggerFragment
 import net.steamcrafted.materialiconlib.MaterialDrawableBuilder
 
-abstract class BaseFragment : Fragment() {
+abstract class BaseFragment : DaggerFragment() {
 
     internal fun replaceFragment(fragment: Fragment, @IdRes @LayoutRes layoutResId: Int, addStack: Boolean) {
         val ft = activity!!.supportFragmentManager.beginTransaction()
